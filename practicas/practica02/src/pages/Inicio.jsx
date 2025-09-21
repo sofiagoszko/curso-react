@@ -23,18 +23,25 @@ export default function Inicio(){
     
     return (
         <div>
-            <div className="p-4 m-4">
-                <ListaOrdenada products={productos}/>
+            <div>
+                <h2 className="text-4xl font-extrabold dark:text-white m-4">Lista de productos</h2>
+                <div className="p-4 m-4">
+                    <ListaOrdenada products={productos}/>
+                </div>
             </div>
-            <div className="flex flex-row flex-wrap p-4 m-4">
-                {tarjetas.map((tarjeta, index) => (
-                    <Tarjeta 
-                        key={index}
-                        titulo={tarjeta.titulo}
-                        descripcion={tarjeta.descripcion}
-                        botonTexto="Más info"
-                    />
-                ))}
+
+            <div>
+                <h2 className="text-4xl font-extrabold dark:text-white m-4">Tarjetas con información</h2>
+                <div className="flex flex-row flex-wrap p-4 m-4">
+                    {tarjetas.map((tarjeta, index) => (
+                        <Tarjeta 
+                            key={index}
+                            titulo={tarjeta.titulo}
+                            descripcion={tarjeta.descripcion}
+                            botonTexto="Más info"
+                        />
+                    ))}
+                </div>
             </div>
         </div>
     );

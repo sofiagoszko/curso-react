@@ -11,8 +11,8 @@ export default function ListaOrdenada ({ products }) {
     }
 
     return (
-        <div className="flex flex-row justify-center items-center">
-            <ol className="list-decimal">
+        <div className="flex  m-2">
+            <ol className="grid grid-flow-col grid-rows-3 gap-x-12 list-decimal">
                 {products.map(product => (
                     <li key={product}>
                         {product}
