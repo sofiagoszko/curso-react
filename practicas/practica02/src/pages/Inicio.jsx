@@ -23,8 +23,10 @@ export default function Inicio(){
     
     return (
         <div>
-            <ListaOrdenada products={productos}/>
-            <div>
+            <div className="p-4 m-4">
+                <ListaOrdenada products={productos}/>
+            </div>
+            <div className="flex flex-row flex-wrap p-4 m-4">
                 {tarjetas.map((tarjeta, index) => (
                     <Tarjeta 
                         key={index}
