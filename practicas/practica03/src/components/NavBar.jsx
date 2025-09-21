@@ -1,45 +1,24 @@
 import React from 'react';
+import { Navbar, Container, Nav, Form, FormControl, Button } from 'react-bootstrap';
 
 export default function NavBar() {
-    return (
-        <nav className="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
-            <div className="container-fluid">
-                <a className="navbar-brand fw-bold me-2" href="/" title="inicio">
-                    Inicio
-                </a>
-            
-                <button
-                    className="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarNav"
-                    aria-controls="navbarNav"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                    >
-                    <span className="navbar-toggler-icon"></span>
-                </button>
-
-                <div className="collapse navbar-collapse" id="navbarNav">
-                    <ul className="navbar-nav ms-auto">
-                        <li className="nav-item ms-2">
-                            <a className="nav-link" href="#" title="Enlace 1">
-                                Link 1
-                            </a>
-                        </li>
-                        <li className="nav-item ms-2">
-                            <a className="nav-link" href="#" title="Enlace 2">
-                                Link 2
-                            </a>
-                        </li>
-                        <li className="nav-item ms-2">
-                            <a className="nav-link" href="#" title="Enlace 3">
-                                Link 3
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    );
+  return (
+    <Navbar bg="primary" expand="lg" variant="dark">
+      <Container fluid>
+        <Navbar.Brand href="/">Inicio</Navbar.Brand>
+        <Navbar.Toggle aria-controls="navbarScroll" />
+        <Navbar.Collapse id="navbarScroll">
+          <Nav className="me-auto my-2 my-lg-0" navbarScroll>
+            <Nav.Link href="#">Link 1</Nav.Link>
+            <Nav.Link href="#">Link 2</Nav.Link>
+            <Nav.Link href="#">Link 3</Nav.Link>
+          </Nav>
+          <Form className="d-flex" role="search">
+            <FormControl type="search" placeholder="Search" className="me-2" />
+            <Button variant="light" style={{ color: '#0d6efd' }}>Buscar</Button>
+          </Form>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+  );
 }
