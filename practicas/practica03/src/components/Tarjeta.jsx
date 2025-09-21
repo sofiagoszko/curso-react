@@ -2,17 +2,16 @@ import React from "react";
 
 export default function Tarjeta({miembro}){
     return(
-        <div className="">
+        <div className="card" style={{width: "18rem"}}>
             <div>
-                <img src={miembro.imagen} alt="imagen de integrante" />
+                <img src={miembro.imagen} alt="imagen de integrante" className="card-img-top"/>
             </div>
-            <div className="">
-                <p className="">Nombre: {miembro.nombre}</p>
+
+            <div className="card-body">
+                <h5 className="card-title">{miembro.nombre}</h5>
+                <p className="card-text">{miembro.rol}</p>
             </div>
-            <div className="">
-                <p className="">Rol: {miembro.rol}</p>
-            </div>
-        </div>
+        </div> 
     )
     
 }
