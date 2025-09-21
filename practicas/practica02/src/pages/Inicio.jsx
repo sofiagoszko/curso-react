@@ -23,6 +23,7 @@ export default function Inicio(){
     
     return (
         <div>
+            <h1 className="m-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white text-center">Práctica 2</h1>
             <div>
                 <h2 className="text-4xl font-extrabold dark:text-white m-4">Lista de productos</h2>
                 <div className="p-4 m-4">
