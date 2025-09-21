@@ -9,9 +9,8 @@ export default function NavBar() {
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav className="me-auto my-2 my-lg-0" navbarScroll>
-            <Nav.Link href="#">Link 1</Nav.Link>
-            <Nav.Link href="#">Link 2</Nav.Link>
-            <Nav.Link href="#">Link 3</Nav.Link>
+            <Nav.Link href="#equipo">Equipo</Nav.Link>
+            <Nav.Link href="#proyectos">Proyectos</Nav.Link>
           </Nav>
           <Form className="d-flex" role="search">
             <FormControl type="search" placeholder="Search" className="me-2" />

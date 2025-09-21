@@ -21,8 +21,8 @@ export default function EquipoTalentoLab() {
     }
 
     return (
-        <div className="container">
-            <h2 className="m-4">¿QUIÉNES SOMOS?</h2>
+        <div className="container" id="equipo">
+            <h2 className="m-4 pt-4">¿QUIÉNES SOMOS?</h2>
             <div className="row row-cols-1 row-cols-md-4 g-4">
                 {miembros.map((miembro, index) => (
                     <div key={index} className="col">
