@@ -1,11 +1,11 @@
-# 📘 Curso de React JS - Ejercicios
+# Curso de React JS - Ejercicios
 
 Este repositorio contiene los ejercicios prácticos realizados durante el curso **React JS - Talento Tech (2025)**.  
 El curso tiene como objetivo brindar los conocimientos y habilidades necesarios para desarrollar aplicaciones web interactivas utilizando **React** y su ecosistema moderno.
 
 ---
 
-## 🚀 Temas del Curso
+## Temas del Curso
 
 1. **Introducción a React**
    - Instalación con Vite y Node.js
@@ -42,7 +42,7 @@ El curso tiene como objetivo brindar los conocimientos y habilidades necesarios 
 
 ---
 
-## 🛠️ Tecnologías Utilizadas
+## Tecnologías Utilizadas
 
 - [React](https://react.dev/)  
 - [Vite](https://vitejs.dev/)  
